@@ -470,7 +470,6 @@ textarea:focus-visible {
 /* Page head */
 .page-head {
   margin-bottom: var(--s55);
-  color: rgba(255, 255, 255, 0.92);
 }
 .page-head h1 {
   font-size: clamp(2rem, 3vw, 2.6rem);
