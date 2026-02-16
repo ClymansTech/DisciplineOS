@@ -71,3 +71,41 @@ disciplineos/
   app.js
   assets/
     resume.pdf   (optional — add your own)
+
+    Getting Started
+
+Option A: Run locally (quick):
+
+Just open index.html in your browser.
+
+Option B: Recommended (local server):
+Some browser features behave more consistently on a local server.
+
+VS Code → install Live Server
+
+Right click index.html → Open with Live Server
+
+Notes / Caveats:
+
+Scroll reveal animation uses modern CSS (animation-timeline: view()).
+
+If a browser doesn’t support it, the site gracefully falls back (content simply appears without the animation).
+
+The “Google Maps API” portion is an embed (no API key required).
+If you want a “true API integration,” replace the iframe with the Maps JavaScript API + key later.
+
+Customization Tips
+
+Theme tokens are in styles.css under :root and html[data-theme="dark"]
+
+Replace placeholder contact info:
+
+Phone: tel:+15555550123
+
+Email: hello@disciplineos.example
+
+Drop your real PDF into assets/resume.pdf to activate the Resume link.
+
+License
+
+Use freely for portfolio/demo purposes. If you publish this publicly, consider adding a license file (MIT is common for portfolio templates).
