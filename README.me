@@ -1,0 +1,73 @@
+# DisciplineOS — Performance & Discipline (Portfolio Demo)
+
+A multi-page, responsive portfolio website built to showcase clean layout, accessibility-minded UI, and “real client site” features.
+
+---
+
+## Pages
+
+- **Home** (`index.html`)  
+  Hero + CTAs, layered background, parallax section, embedded YouTube video, feature cards, sticky transparent navbar.
+
+- **Training** (`training.html`)  
+  Responsive **table layout** with an accessible horizontal scroll wrapper, plus program cards, and CTAs (phone/email).
+
+- **Contact** (`contact.html`)  
+  HTML5-validated contact form + CTAs (phone/email) + Google Maps embed.
+
+---
+
+## Key Features
+
+### UI / UX
+- Sticky **transparent navbar** with blur effect
+- Mobile nav menu toggle below **500px**
+- Strong CTA placement (phone + email + buttons)
+- Hover effects (transform + glow) and button transitions
+- Layered background with image + opacity overlays
+- **Parallax** section (`background-attachment: fixed`)
+- YouTube embed (`youtube-nocookie.com`)
+
+### Accessibility (WCAG-friendly patterns)
+- Skip link (“Skip to content”)
+- `:focus-visible` styles for keyboard users
+- Semantic sections/headings
+- Form labels + required fields
+- Table wrapped in a focusable scroll region for smaller screens
+
+### Responsive Layout
+- Mobile-first adjustments
+- Grid collapses cleanly under 900px
+- Table becomes horizontally scrollable on smaller widths
+
+### Minimal JavaScript
+Only used for:
+- Theme toggle (dark/light) with `localStorage` persistence
+- Mobile nav open/close
+- Footer year
+
+Everything else is handled with HTML/CSS.
+
+---
+
+## Tech Stack
+
+- HTML5
+- CSS3 (custom properties, responsive grid, scroll/entry animation)
+- Vanilla JavaScript (tiny utility script)
+- Google Fonts (Inter)
+- Google Maps embed (iframe)
+
+---
+
+## File Structure
+
+text
+disciplineos/
+  index.html
+  training.html
+  contact.html
+  styles.css
+  app.js
+  assets/
+    resume.pdf   (optional — add your own)
