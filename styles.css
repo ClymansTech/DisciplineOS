@@ -275,12 +275,12 @@ textarea:focus-visible {
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.6);
   transition: transform 0.2s ease, background 0.2s ease;
 }
 .pill:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* Buttons */
@@ -314,7 +314,7 @@ textarea:focus-visible {
   color: var(--color1);
 }
 .btn-ghost {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.6);
   border-color: rgba(255, 255, 255, 0.18);
   color: var(--color1);
 }
