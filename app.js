@@ -21,3 +21,13 @@ nBtn &&
     const open = links.classList.toggle("is-open");
     nBtn.setAttribute("aria-expanded", String(open));
   });
+
+///////////////Form pop-up for demo instead of live Web3 Forms hookup//////////
+const form = document.querySelector("#contactForm");
+form &&
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert(
+      "Demo: On live-business site, this form would be hooked up to Web3Forms."
+    );
+  });
