@@ -690,9 +690,23 @@ textarea:valid {
 }
 
 /*Workout checklist starts*/
-/* Checklist (mobile-first, no JS) */
+/* Checklist (mobile-first) */
 .checklist {
   padding: var(--s34);
+}
+
+.checklist {
+  background: radial-gradient(
+      900px 450px at 20% 10%,
+      rgba(59, 130, 246, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 450px at 80% 20%,
+      rgba(34, 197, 94, 0.16),
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg), #000 8%));
 }
 
 .checklist__list {
