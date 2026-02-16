@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="DisciplineOS — a performance & discipline portfolio demo: responsive, accessible, multi-page, table layout, parallax, map, and minimal JS."
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <title>DisciplineOS — Performance & Discipline</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="DisciplineOS Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">DisciplineOS</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
+
+        <div id="navLinks" class="nav-links">
+          <a href="training.html">Training</a>
+          <a href="contact.html">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
+            >Resume (PDF)</a
+          >
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <span aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Performance • Discipline • Consistency</p>
+            <h1>Build discipline like a system.</h1>
+            <p class="lead">
+              A multi-page portfolio demo with WCAG-friendly patterns,
+              responsive layout, parallax, table layout, a contact form, and
+              embedded media—using minimal JavaScript.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="training.html"
+                >View programs <span aria-hidden="true">→</span></a
+              >
+              <a class="btn btn-ghost" href="contact.html">Book a consult</a>
+            </div>
+
+            <div class="contact-strip" aria-label="Quick contact">
+              <a class="pill" href="tel:+15555550123"
+                ><span aria-hidden="true">📞</span> +1 (555) 555-0123</a
+              >
+              <a class="pill" href="mailto:hello@disciplineos.example"
+                ><span aria-hidden="true">✉️</span>
+                hello@disciplineos.example</a
+              >
+            </div>
+          </div>
+
+          <aside class="card hero-card reveal" aria-label="Session preview">
+            <h2>Today’s Session</h2>
+            <p class="muted">
+              Simple progress UI. Clean, explainable, and accessible.
+            </p>
+
+            <div class="session">
+              <div class="session-row">
+                <div>
+                  <strong>Run</strong>
+                  <div class="muted small">5 km easy</div>
+                </div>
+                <span class="badge">Endurance</span>
+              </div>
+
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Workout completion"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="60"
+              >
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+
+              <div class="session-meta">
+                <span><strong>3</strong> tasks</span>
+                <span><strong>~35</strong> min</span>
+                <span><strong>60%</strong> done</span>
+              </div>
+
+              <a class="btn btn-secondary full" href="training.html"
+                >Start a program</a
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>What this demo includes</h2>
+            <p class="muted">
+              All the “portfolio proof” stuff—without heavy JavaScript.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal">
+              <h3>WCAG-minded UI</h3>
+              <p class="muted">
+                Skip link, focus rings, readable contrast, semantic structure.
+              </p>
+              <a class="link" href="contact.html"
+                >See the form <span aria-hidden="true">→</span></a
+              >
+            </article>
+
+            <article class="card reveal">
+              <h3>Layout stress test</h3>
+              <p class="muted">
+                A real table layout with scroll wrapper + responsive behavior.
+              </p>
+              <a class="link" href="training.html"
+                >View the table <span aria-hidden="true">→</span></a
+              >
+            </article>
+
+            <article class="card reveal">
+              <h3>Dark mode toggle</h3>
+              <p class="muted">
+                Tiny JS: toggles theme and remembers your choice.
+              </p>
+              <a class="link" href="#video"
+                >Watch demo video <span aria-hidden="true">→</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARALLAX CTA -->
+      <section class="parallax">
+        <div class="parallax-overlay" aria-hidden="true"></div>
+        <div class="container parallax-inner reveal">
+          <h2>Discipline isn't motivation. It's design.</h2>
+          <p class="muted">
+            Build systems that reduce friction and make consistency automatic.
+          </p>
+          <a class="btn btn-primary" href="contact.html"
+            >Get a build like this</a
+          >
+        </div>
+      </section>
+
+      <!-- VIDEO -->
+      <section id="video" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Short walkthrough</h2>
+            <p class="muted">YouTube embed for media + layout handling.</p>
+          </div>
+
+          <div class="video-wrap reveal">
+            <iframe
+              title="YouTube video"
+              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="footer-cta reveal">
+            <div>
+              <h2>Want a client-ready version?</h2>
+              <p class="muted">
+                Multi-page, responsive, accessible, and easy to explain.
+              </p>
+            </div>
+            <div class="cta-row">
+              <a
+                class="btn btn-primary"
+                href="mailto:hello@disciplineos.example"
+                >Email me</a
+              >
+              <a class="btn btn-ghost" href="tel:+15555550123">Call now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p class="muted small">
+          © <span id="year"></span> DisciplineOS. Demo build.
+        </p>
+        <div class="footer-links">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
+            >PDF</a
+          >
+          <a
+            href="https://developer.mozilla.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

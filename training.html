@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Training programs with a table layout, responsive UI, and accessible scroll wrapper."
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Training — DisciplineOS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="DisciplineOS Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">DisciplineOS</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
+
+        <div id="navLinks" class="nav-links">
+          <a aria-current="page" href="training.html">Training</a>
+          <a href="contact.html">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
+            >Resume (PDF)</a
+          >
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <span aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="section">
+      <div class="container">
+        <div class="page-head reveal">
+          <h1>Training Programs</h1>
+          <p class="muted">
+            Table layout + responsive overflow + hover effects.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="contact.html">Work with me</a>
+            <a class="btn btn-ghost" href="tel:+15555550123">Call</a>
+          </div>
+        </div>
+
+        <section class="reveal">
+          <h2 class="h3">Weekly structure (example table)</h2>
+
+          <div
+            class="table-wrap"
+            role="region"
+            aria-label="Training table"
+            tabindex="0"
+          >
+            <table class="table">
+              <caption class="sr-only">
+                Example weekly training schedule
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Focus</th>
+                  <th scope="col">Session</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Intensity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Mon</th>
+                  <td>Strength</td>
+                  <td>Full body circuit</td>
+                  <td>35–45 min</td>
+                  <td><span class="badge">Moderate</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Tue</th>
+                  <td>Endurance</td>
+                  <td>Zone 2 run / brisk walk</td>
+                  <td>30–40 min</td>
+                  <td><span class="badge badge-soft">Easy</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wed</th>
+                  <td>Skill</td>
+                  <td>Footwork + bag drills</td>
+                  <td>25–35 min</td>
+                  <td><span class="badge">Moderate</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Thu</th>
+                  <td>Mobility</td>
+                  <td>Hips + thoracic flow</td>
+                  <td>15–25 min</td>
+                  <td><span class="badge badge-soft">Easy</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Fri</th>
+                  <td>Intervals</td>
+                  <td>Short hills / tempo blocks</td>
+                  <td>25–35 min</td>
+                  <td><span class="badge badge-warn">Hard</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Sat</th>
+                  <td>Outdoor</td>
+                  <td>Trail hike / ruck</td>
+                  <td>45–90 min</td>
+                  <td><span class="badge">Moderate</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Sun</th>
+                  <td>Recovery</td>
+                  <td>Light walk + stretch</td>
+                  <td>20–30 min</td>
+                  <td><span class="badge badge-soft">Easy</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="muted small">
+            On small screens this table scrolls horizontally (focusable region).
+          </p>
+        </section>
+
+        <section class="section-sm">
+          <div class="cards">
+            <article class="card reveal">
+              <h3>Strength Base</h3>
+              <p class="muted">Simple schedule designed to be consistent.</p>
+              <a class="btn btn-secondary" href="contact.html">Get template</a>
+            </article>
+
+            <article class="card reveal">
+              <h3>Endurance Build</h3>
+              <p class="muted">Low friction plan for steady progress.</p>
+              <a class="btn btn-secondary" href="contact.html">Ask about it</a>
+            </article>
+
+            <article class="card reveal">
+              <h3>Skill + Mobility</h3>
+              <p class="muted">Short blocks with recovery baked in.</p>
+              <a class="btn btn-secondary" href="contact.html">Book</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p class="muted small">
+          © <span id="year"></span> DisciplineOS. Demo build.
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

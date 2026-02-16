@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact page with HTML5 validation, accessible labels, and a Google Maps embed."
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Contact — DisciplineOS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="DisciplineOS Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">DisciplineOS</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
+
+        <div id="navLinks" class="nav-links">
+          <a href="training.html">Training</a>
+          <a aria-current="page" href="contact.html">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
+            >Resume (PDF)</a
+          >
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <span aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="section">
+      <div class="container">
+        <div class="page-head reveal">
+          <h1>Contact</h1>
+          <p class="muted">
+            HTML5 validation + accessible form + embedded map.
+          </p>
+
+          <div class="contact-strip">
+            <a class="pill" href="tel:+15555550123"
+              ><span aria-hidden="true">📞</span> +1 (555) 555-0123</a
+            >
+            <a class="pill" href="mailto:hello@disciplineos.example"
+              ><span aria-hidden="true">✉️</span> hello@disciplineos.example</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <section class="card reveal">
+            <h2 class="h3">Send a message</h2>
+
+            <!-- HTML5 validation: required + type + minlength -->
+            <form class="form" action="#" method="post">
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                />
+                <p class="hint">Required.</p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <p class="hint">Required. Must be a valid email.</p>
+              </div>
+
+              <div class="field">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Choose one…</option>
+                  <option>Website build</option>
+                  <option>Accessibility review</option>
+                  <option>Template purchase</option>
+                </select>
+                <p class="hint">Required.</p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  minlength="10"
+                ></textarea>
+                <p class="hint">Required. Minimum 10 characters.</p>
+              </div>
+
+              <button class="btn btn-primary" type="submit">
+                Send <span aria-hidden="true">→</span>
+              </button>
+
+              <p class="muted small">
+                External links demo:
+                <a
+                  class="link"
+                  href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WCAG</a
+                >
+                •
+                <a
+                  class="link"
+                  href="assets/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >PDF</a
+                >
+              </p>
+            </form>
+          </section>
+
+          <section class="card reveal">
+            <h2 class="h3">Find us</h2>
+            <p class="muted">
+              Google Maps embed (no API key needed for the embed).
+            </p>
+
+            <div class="map-wrap" role="region" aria-label="Map">
+              <iframe
+                title="Google Map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Chatham%20Ontario&output=embed"
+              >
+              </iframe>
+            </div>
+
+            <div class="divider"></div>
+            <a class="btn btn-ghost" href="training.html">Back to programs</a>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p class="muted small">
+          © <span id="year"></span> DisciplineOS. Demo build.
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="training.html">Training</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
