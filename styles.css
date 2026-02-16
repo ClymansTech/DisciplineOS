@@ -688,3 +688,85 @@ textarea:valid {
   white-space: nowrap;
   border: 0;
 }
+
+/*Workout checklist starts*/
+/* Checklist (mobile-first, no JS) */
+.checklist {
+  padding: var(--s34);
+}
+
+.checklist__list {
+  display: grid;
+  gap: var(--s21);
+  margin-top: var(--s21);
+}
+
+.checklist__item {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: var(--s21);
+  align-items: start;
+  padding: var(--s21);
+  border-radius: 13px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface), transparent 10%);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.checklist__item:hover {
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--surface), #fff 6%);
+}
+
+.checklist__box {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  accent-color: var(--accent);
+}
+
+.checklist__label {
+  cursor: pointer;
+  display: grid;
+  gap: 6px;
+}
+
+.checklist__title {
+  font-weight: 700;
+}
+
+.checklist__meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Checked state styling */
+.checklist__box:checked + .checklist__label .checklist__title {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+.checklist__box:checked + .checklist__label .checklist__meta {
+  opacity: 0.7;
+}
+
+/* Bigger tap targets on small screens */
+@media (max-width: 500px) {
+  .checklist__item {
+    padding: var(--s34);
+    grid-template-columns: 26px 1fr;
+  }
+  .checklist__box {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.checklist__footer {
+  margin-top: var(--s34);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s21);
+  align-items: center;
+  justify-content: space-between;
+}
+/*Workout checklist ends*/

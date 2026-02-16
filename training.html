@@ -100,58 +100,112 @@
                   <th scope="row">Mon</th>
                   <td>Strength</td>
                   <td>Full body circuit</td>
-                  <td>35–45 min</td>
+                  <td>35-45 min</td>
                   <td><span class="badge">Moderate</span></td>
                 </tr>
                 <tr>
                   <th scope="row">Tue</th>
                   <td>Endurance</td>
                   <td>Zone 2 run / brisk walk</td>
-                  <td>30–40 min</td>
+                  <td>30-40 min</td>
                   <td><span class="badge badge-soft">Easy</span></td>
                 </tr>
                 <tr>
                   <th scope="row">Wed</th>
                   <td>Skill</td>
                   <td>Footwork + bag drills</td>
-                  <td>25–35 min</td>
+                  <td>25-35 min</td>
                   <td><span class="badge">Moderate</span></td>
                 </tr>
                 <tr>
                   <th scope="row">Thu</th>
                   <td>Mobility</td>
                   <td>Hips + thoracic flow</td>
-                  <td>15–25 min</td>
+                  <td>15-25 min</td>
                   <td><span class="badge badge-soft">Easy</span></td>
                 </tr>
                 <tr>
                   <th scope="row">Fri</th>
                   <td>Intervals</td>
                   <td>Short hills / tempo blocks</td>
-                  <td>25–35 min</td>
+                  <td>25-35 min</td>
                   <td><span class="badge badge-warn">Hard</span></td>
                 </tr>
                 <tr>
                   <th scope="row">Sat</th>
                   <td>Outdoor</td>
                   <td>Trail hike / ruck</td>
-                  <td>45–90 min</td>
+                  <td>45-90 min</td>
                   <td><span class="badge">Moderate</span></td>
                 </tr>
                 <tr>
                   <th scope="row">Sun</th>
                   <td>Recovery</td>
                   <td>Light walk + stretch</td>
-                  <td>20–30 min</td>
+                  <td>20-30 min</td>
                   <td><span class="badge badge-soft">Easy</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <p class="muted small">
-            On small screens this table scrolls horizontally (focusable region).
-          </p>
+          <!--Workout checklist starts-->
+          <section class="section-sm reveal" aria-labelledby="checklistTitle">
+            <h2 id="checklistTitle" class="h3">Mobile Session Checklist</h2>
+            <p class="muted">
+              Quick tap checklist for training days. Works great on phone (big
+              tap targets, no JS).
+            </p>
+
+            <div class="checklist card">
+              <ul class="checklist__list" role="list">
+                <li class="checklist__item">
+                  <input class="checklist__box" type="checkbox" id="c1" />
+                  <label class="checklist__label" for="c1">
+                    <span class="checklist__title">Warm-up</span>
+                    <span class="checklist__meta">5–8 min easy movement</span>
+                  </label>
+                </li>
+
+                <li class="checklist__item">
+                  <input class="checklist__box" type="checkbox" id="c2" />
+                  <label class="checklist__label" for="c2">
+                    <span class="checklist__title">Main work</span>
+                    <span class="checklist__meta"
+                      >Follow the plan for today</span
+                    >
+                  </label>
+                </li>
+
+                <li class="checklist__item">
+                  <input class="checklist__box" type="checkbox" id="c3" />
+                  <label class="checklist__label" for="c3">
+                    <span class="checklist__title">Hydrate</span>
+                    <span class="checklist__meta">Water before + after</span>
+                  </label>
+                </li>
+
+                <li class="checklist__item">
+                  <input class="checklist__box" type="checkbox" id="c4" />
+                  <label class="checklist__label" for="c4">
+                    <span class="checklist__title">Cooldown</span>
+                    <span class="checklist__meta">Light stretch or walk</span>
+                  </label>
+                </li>
+
+                <li class="checklist__item">
+                  <input class="checklist__box" type="checkbox" id="c5" />
+                  <label class="checklist__label" for="c5">
+                    <span class="checklist__title">Log it</span>
+                    <span class="checklist__meta"
+                      >1 note: what felt good / what to adjust</span
+                    >
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--Workout checklist end-->
         </section>
 
         <section class="section-sm">
