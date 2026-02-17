@@ -818,3 +818,16 @@ textarea:valid {
   margin-top: 8px;
   margin-bottom: 21px;
 }
+
+/*Styling for card icons below hero*/
+.card-header {
+  display: flex;
+  align-items: center; /* Aligns icon and text vertically in the middle */
+  gap: 10px; /* Adds space between the icon and the H3 */
+  margin-bottom: 8px; /* Adds space between this header and the paragraph */
+}
+
+/* Optional: remove default H3 margins so it aligns perfectly with the icon */
+.card-header h3 {
+  margin: 0;
+}
