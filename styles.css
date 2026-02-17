@@ -842,8 +842,9 @@ textarea:valid {
 }
 
 .footer-cta {
-  justify-content: space-evenly;
-  width: auto;
+  width: min(600px, 100%);
+  margin-inline: auto; /* centers the card */
+  justify-content: center; /* or space-between / space-evenly if you prefer */
 }
 
 /*Center cta and change to block on smaller screens*/
