@@ -790,3 +790,7 @@ textarea:valid {
   width: min(560px, 100%);
   margin-inline: auto;
 }
+#checklistTitle,
+#checklistP {
+  text-align: center;
+}
