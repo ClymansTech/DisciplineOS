@@ -831,3 +831,22 @@ textarea:valid {
 .card-header h3 {
   margin: 0;
 }
+
+/*Centered cta on homepage above footer*/
+.cta-row > h2 {
+  align-content: center;
+}
+
+.footer-cta {
+  justify-content: space-evenly;
+  width: auto;
+}
+
+/*Center cta and change to block on smaller screens*/
+@media screen and (max-width: 900px) {
+  .cta-row {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
