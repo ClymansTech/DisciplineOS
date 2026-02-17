@@ -97,7 +97,7 @@ textarea:focus-visible {
   margin-inline: auto;
 }
 .section {
-  padding: var(--s89) 0;
+  padding: var(--s55) 0;
 }
 .section-sm {
   padding: var(--s55) 0;
@@ -856,6 +856,8 @@ textarea:valid {
   }
 }
 
+/*Centering section-head*/
+
 .section-head {
   text-align: center;
   margin-bottom: 21px;
@@ -863,4 +865,11 @@ textarea:valid {
 
 .section-head > h2 {
   margin-bottom: 13px;
+}
+
+/*Adding btn below video on homepage*/
+.btn-video {
+  display: block; /* Change from inline to block */
+  width: fit-content; /* Shrink the block to fit the text */
+  margin: 2rem auto 0; /* 'auto' on left/right does the centering magic */
 }
