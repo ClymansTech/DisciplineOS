@@ -785,6 +785,7 @@ textarea:valid {
 }
 /*Workout checklist ends*/
 
+/*Center and width refine for checklist*/
 .checklist-wrap {
   width: min(560px, 100%);
   margin-inline: auto;
