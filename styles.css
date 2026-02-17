@@ -453,6 +453,10 @@ textarea:focus-visible {
   margin-bottom: var(--s21);
 }
 
+.parallax-inner p {
+  margin-bottom: var(--s21);
+}
+
 /* Video */
 .video-wrap {
   border-radius: var(--radius);
