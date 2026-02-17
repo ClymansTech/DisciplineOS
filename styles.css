@@ -854,3 +854,12 @@ textarea:valid {
     margin: auto;
   }
 }
+
+.section-head {
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.section-head > h2 {
+  margin-bottom: 13px;
+}
