@@ -226,10 +226,10 @@ textarea:focus-visible {
   inset: 0;
   pointer-events: none;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 35%),
-    url("https://images.unsplash.com/photo-1526401485004-2fa806b5c4c7?auto=format&fit=crop&w=1600&q=60");
+    url("imgs/WomanRunning.png");
   opacity: 0.18;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   filter: saturate(0.9);
 }
 .hero-grid {
@@ -872,4 +872,24 @@ textarea:valid {
   display: block; /* Change from inline to block */
   width: fit-content; /* Shrink the block to fit the text */
   margin: 2rem auto 0; /* 'auto' on left/right does the centering magic */
+}
+
+/*Smaller screen hero background img modification*/
+
+@media screen and (max-width: 560px) {
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1),
+        transparent 35%
+      ),
+      url("imgs/WomanRunning.png");
+    opacity: 0.18;
+    background-size: cover;
+    background-position: top;
+    filter: saturate(0.9);
+  }
 }
