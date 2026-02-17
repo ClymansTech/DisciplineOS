@@ -689,6 +689,7 @@ textarea:valid {
 }
 
 /*Workout checklist starts*/
+
 /* Checklist (mobile-first) */
 .checklist {
   padding: var(--s34);
@@ -783,3 +784,8 @@ textarea:valid {
   justify-content: space-between;
 }
 /*Workout checklist ends*/
+
+.checklist-wrap {
+  width: min(560px, 100%);
+  margin-inline: auto;
+}
