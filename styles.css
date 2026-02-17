@@ -813,3 +813,8 @@ textarea:valid {
   text-align: center;
   font-weight: bold;
 }
+
+.focusP {
+  margin-top: 8px;
+  margin-bottom: 21px;
+}
