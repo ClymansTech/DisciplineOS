@@ -629,7 +629,6 @@ textarea:valid {
     animation: none;
   }
 }
-
 /* Responsive */
 @media (max-width: 900px) {
   .hero-grid {
