@@ -806,3 +806,10 @@ textarea:valid {
   text-align: center;
   margin-bottom: 21px;
 }
+
+/*Center heading and subtitle below hero*/
+.focusHeading,
+.focusP {
+  text-align: center;
+  font-weight: bold;
+}
