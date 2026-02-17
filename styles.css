@@ -546,7 +546,7 @@ textarea:focus-visible {
 input:invalid,
 select:invalid,
 textarea:invalid {
-  border-color: #ef4444;
+  border-color: #44c7ef;
 }
 input:valid,
 select:valid,
