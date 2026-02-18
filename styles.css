@@ -830,6 +830,18 @@ textarea:valid {
   margin-bottom: 21px;
 }
 
+.workout-link a {
+  color: var(--muted);
+  text-decoration: none;
+  margin: auto;
+  margin-top: 55px;
+  font-weight: bold;
+}
+
+.workout-link a:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+
 /*Center heading and subtitle below hero*/
 .focusHeading,
 .focusP {
