@@ -31,7 +31,7 @@
 }
 
 /* Dark theme via toggle */
-html[data-theme="dark"] {
+/*html[data-theme="dark"] {
   --bg: #0b1220;
   --surface: rgba(11, 18, 32, 0.68);
   --card: rgba(11, 18, 32, 0.62);
@@ -43,6 +43,19 @@ html[data-theme="dark"] {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}*/
+
+html[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: rgba(11, 18, 32, 0.68);
+  --card: rgba(11, 18, 32, 0.62);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.7);
+  --line: rgba(255, 255, 255, 0.16);
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+
+  /* keep this as an actual color */
+  --color1: rgba(255, 255, 255, 0.92);
 }
 
 html[data-theme="dark"] .footer-cta {
@@ -50,14 +63,12 @@ html[data-theme="dark"] .footer-cta {
 }
 
 /*Darked toggle background on nav dropdown on small screens*/
-html[data-theme="dark"] {
-  @media (max-width: 500px) {
-    .nav-links.is-open {
-      display: flex;
-      background-color: rgba(0, 0, 0, 1);
-      border: 1px solid #fff;
-      color: #fff;
-    }
+@media (max-width: 500px) {
+  html[data-theme="dark"] .nav-links.is-open {
+    display: flex;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid #fff;
+    color: #fff;
   }
 }
 
@@ -390,6 +401,85 @@ textarea:focus-visible {
   color: var(--accent);
   font-weight: 600;
 }
+
+/*Programs on training page*/
+/* Programs section */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s34);
+  margin-top: var(--s21);
+}
+
+/* Not full-width on small screens */
+@media (max-width: 900px) {
+  .program-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .program-card {
+    width: min(520px, 100%);
+  }
+}
+
+.program-card {
+  display: grid;
+  gap: var(--s21);
+}
+
+.program-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s21);
+}
+
+.program-title {
+  margin: 0;
+}
+
+.program-sub {
+  margin-top: 6px;
+}
+
+.program-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.program-list li {
+  color: color-mix(in srgb, var(--text), var(--muted) 35%);
+}
+
+/* Price pill */
+.price-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  background: rgba(59, 130, 246, 0.14);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.price-pill--green {
+  background: rgba(34, 197, 94, 0.14);
+  border-color: rgba(34, 197, 94, 0.25);
+}
+
+.price-pill--amber {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.program-cta {
+  margin-top: auto;
+}
+/*Programs on training page*/
 
 .hero-card {
   background: rgba(255, 255, 255, 0.6);
@@ -1019,4 +1109,13 @@ textarea:valid {
   .lead {
     margin-inline: auto;
   }
+}
+
+.container .page-head .cta-row {
+  justify-content: center; /* centers the buttons */
+  text-align: center; /* centers inline text, not the flex items */
+}
+
+.container .page-head {
+  text-align: center;
 }
