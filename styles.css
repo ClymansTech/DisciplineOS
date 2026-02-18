@@ -472,11 +472,11 @@ textarea:focus-visible {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
 }
-.video-wrap iframe {
+.hero-media img {
   width: 100%;
-  aspect-ratio: 16/9;
-  border: 0;
-  display: block;
+  height: auto; /* normal scaling */
+  max-height: 800px; /* cap the height */
+  object-fit: cover; /* or 'contain' depending on what you want */
 }
 
 /* Page head */
@@ -933,5 +933,52 @@ textarea:valid {
     background-size: cover;
     background-position: top;
     filter: saturate(0.9);
+  }
+}
+
+/*Making teamwork section flex*/
+/* Teamwork section: 40/60 split, stacks on small screens */
+.container-teamwork {
+  width: min(1100px, calc(100% - var(--s34)));
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* 40/60 */
+  gap: var(--s34);
+  align-items: center;
+}
+
+/* Left column text */
+#video .section-head {
+  text-align: left; /* keep it left since it's a left column */
+  margin-bottom: 0; /* remove your global section-head bottom margin */
+}
+
+/* Right column video */
+.video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 600px;
+
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Stack on smaller screens */
+@media (max-width: 900px) {
+  .container-teamwork {
+    grid-template-columns: 1fr;
+  }
+  #video .section-head {
+    text-align: center;
   }
 }
