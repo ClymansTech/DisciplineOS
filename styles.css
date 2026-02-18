@@ -313,6 +313,8 @@ textarea:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 13px;
+
+  margin-top: 21px;
 }
 
 .pill {
@@ -1014,7 +1016,7 @@ textarea:valid {
   }
 
   /*Remove contact strip on smaller devices*/
-  .contact-strip a {
+  .contact-strip .homePills {
     display: none;
   }
 
