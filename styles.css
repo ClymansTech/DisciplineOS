@@ -907,6 +907,7 @@ textarea:valid {
 
 .section-head > h2 {
   margin-bottom: 13px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
 /*Adding btn below video on homepage*/
