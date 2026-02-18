@@ -908,6 +908,11 @@ textarea:valid {
   .cta-row > h2 {
     margin-bottom: 13px;
   }
+
+  /*Remove contact strip on smaller devices*/
+  .contact-strip a {
+    display: none;
+  }
 }
 
 /*Centering section-head*/
