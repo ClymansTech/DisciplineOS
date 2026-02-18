@@ -852,7 +852,7 @@ textarea:valid {
 }
 
 .footer-cta {
-  width: min(600px, 100%);
+  width: min(500px, 100%);
   margin-inline: auto; /* centers the card */
   justify-content: center; /* or space-between / space-evenly if you prefer */
 }
@@ -863,6 +863,9 @@ textarea:valid {
     display: block;
     text-align: center;
     margin: auto;
+  }
+  .cta-row > h2 {
+    margin-bottom: 13px;
   }
 }
 
