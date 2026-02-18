@@ -983,3 +983,14 @@ textarea:valid {
     text-align: center;
   }
 }
+
+/*Text part of hero centered on smaller screens*/
+
+@media screen and (max-width: 900px) {
+  .heroSmall {
+    text-align: center;
+  }
+  .lead {
+    margin-inline: auto;
+  }
+}
