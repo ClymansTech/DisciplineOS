@@ -913,6 +913,15 @@ textarea:valid {
   .contact-strip a {
     display: none;
   }
+
+  .features-cards {
+    grid-template-columns: 1fr; /* still one column */
+    justify-items: center; /* center the single column */
+  }
+
+  .cardFeatures {
+    width: min(400px, 100%); /* not wider than 560px, but can shrink */
+  }
 }
 
 /*Centering section-head*/
