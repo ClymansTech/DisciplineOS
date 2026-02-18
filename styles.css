@@ -689,7 +689,7 @@ textarea:valid {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .nav {
     padding: var(--s21) var(--s21);
   }
