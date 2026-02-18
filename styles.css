@@ -625,6 +625,10 @@ textarea:valid {
   margin-bottom: 21px;
 }
 
+.footSection {
+  padding-top: 0;
+}
+
 /* Scroll/entry animations (CSS-only) */
 .reveal {
   opacity: 0;
