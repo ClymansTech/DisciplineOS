@@ -49,6 +49,18 @@ html[data-theme="dark"] .footer-cta {
   background: var(--line);
 }
 
+/*Darked toggle background on nav dropdown on small screens*/
+html[data-theme="dark"] {
+  @media (max-width: 500px) {
+    .nav-links.is-open {
+      display: flex;
+      background-color: rgba(0, 0, 0, 1);
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
 /*fixing scroll issue for navbar starts*/
 html {
   min-height: 100%;
@@ -195,7 +207,7 @@ textarea:focus-visible {
   display: none;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.16);
-  color: #fff;
+  color: var(--color1);
   border-radius: 13px;
   padding: 10px 12px;
   cursor: pointer;
