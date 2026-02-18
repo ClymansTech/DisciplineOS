@@ -186,12 +186,13 @@ textarea:focus-visible {
   color: var(--color1); /*rgba(255, 255, 255, 0.92);*/
 }
 .brand-mark {
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.18);
+  width: 66px; /* pick a size that feels right */
+  height: 66px;
+  border-radius: 8px; /* or 999px if you want it round */
+  object-fit: contain; /* keeps logo from stretching */
+  display: block;
 }
+
 .brand-text {
   font-weight: 800;
   letter-spacing: 0.2px;
