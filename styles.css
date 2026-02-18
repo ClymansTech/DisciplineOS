@@ -43,9 +43,10 @@ html[data-theme="dark"] {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  .footer-cta {
-    background-color: var(--line);
-  }
+}
+
+html[data-theme="dark"] .footer-cta {
+  background: var(--line);
 }
 
 /*fixing scroll issue for navbar starts*/
