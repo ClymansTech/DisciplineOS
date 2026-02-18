@@ -263,6 +263,20 @@ textarea:focus-visible {
   background-position: top;
   filter: saturate(0.9);
 }
+
+.hero-bgTraining {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 35%),
+    url(imgs/ManRunning.png);
+  opacity: 0.18;
+  background-size: contain;
+
+  background-position: top;
+  filter: saturate(0.9);
+}
+
 .hero-grid {
   position: relative;
   display: grid;
