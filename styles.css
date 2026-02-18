@@ -1145,3 +1145,8 @@ textarea:valid {
 .contactStripCenter {
   justify-content: center;
 }
+
+/*Focused Training buttons*/
+.focusedTrainingBtns {
+  margin-top: 8px;
+}
