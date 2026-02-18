@@ -1112,10 +1112,15 @@ textarea:valid {
 }
 
 .container .page-head .cta-row {
-  justify-content: center; /* centers the buttons */
-  text-align: center; /* centers inline text, not the flex items */
+  justify-content: center;
+  text-align: center;
 }
 
 .container .page-head {
   text-align: center;
+}
+
+/*Changed margin on Training page*/
+.trainingP {
+  margin-bottom: 21px;
 }
