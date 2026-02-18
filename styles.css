@@ -620,6 +620,11 @@ textarea:valid {
   border: 1px solid var(--line);
 }
 
+.footerh2 {
+  text-align: center;
+  margin-bottom: 21px;
+}
+
 /* Scroll/entry animations (CSS-only) */
 .reveal {
   opacity: 0;
