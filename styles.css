@@ -797,6 +797,7 @@ textarea:valid {
   overflow: hidden;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  margin-top: 13px;
 }
 .map-wrap iframe {
   width: 100%;
