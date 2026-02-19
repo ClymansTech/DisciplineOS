@@ -108,6 +108,39 @@ body {
     animation: none;
   }
 }
+
+/* =========================
+   ANIMATION UTILITIES
+========================= */
+
+/* Slide in from left -> right when visible */
+.u-slide-in-right {
+  --dur: 900ms;
+  --ease: ease-out;
+  --delay: 0ms;
+  --x: 24px;
+
+  opacity: 0;
+  transform: translateX(calc(var(--x) * -1));
+  transition: opacity var(--dur) var(--ease) var(--delay),
+    transform var(--dur) var(--ease) var(--delay);
+  will-change: opacity, transform;
+}
+
+.u-slide-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .u-slide-in-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /*=======================
 Utilities ends 
 ===============*/

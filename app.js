@@ -31,3 +31,25 @@ form &&
       "Demo: On live-business site, this form would be hooked up to Web3Forms."
     );
   });
+
+///////////////////////Slide-in from right on scroll Js for Utility//////////////////
+// Animate on scroll: add .is-visible when elements enter viewport
+const revealOnScroll = document.querySelectorAll(
+  ".u-slide-in-right, .u-fade-in-up"
+);
+
+const io = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target); // animate once
+    });
+  },
+  {
+    threshold: 0.15, // % of element visible before triggering
+    rootMargin: "0px 0px -10% 0px", // trigger a bit before it's fully in view
+  }
+);
+
+revealOnScroll.forEach((el) => io.observe(el));
