@@ -221,6 +221,7 @@ textarea:focus-visible {
 .container {
   width: min(1100px, calc(100% - var(--s34)));
   margin-inline: auto;
+  padding-inline: 13px;
 }
 .section {
   padding: var(--s55) 0;
