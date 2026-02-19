@@ -1,19 +1,28 @@
 # DisciplineOS — Performance & Discipline (Portfolio Demo)
 
-A multi-page, responsive portfolio website built to showcase clean layout, accessibility-minded UI, and “real client site” features.
+A multi-page, responsive portfolio website built to showcase clean layout, accessibility-minded UI, and “real client site” features for a coaching / training brand concept: **Performance • Discipline • Consistency**.
+
+**Live site:** https://clymanstech.github.io/DisciplineOS/
 
 ---
 
 ## Pages
 
 - **Home** (`index.html`)  
-  Hero + CTAs, layered background, parallax section, embedded YouTube video, feature cards, sticky transparent navbar.
+  Hero + CTAs, layered background, parallax section, embedded YouTube video, feature cards, sticky transparent navbar.  
+  Live: https://clymanstech.github.io/DisciplineOS/
 
 - **Training** (`training.html`)  
-  Responsive **table layout** with an accessible horizontal scroll wrapper, plus program cards, and CTAs (phone/email).
+  Responsive **table layout** with an accessible horizontal scroll wrapper, plus program cards, and CTAs (phone/email).  
+  Live: https://clymanstech.github.io/DisciplineOS/training.html
 
 - **Contact** (`contact.html`)  
-  HTML5-validated contact form + CTAs (phone/email) + Google Maps embed.
+  HTML5-validated contact form + CTAs (phone/email) + Google Maps embed.  
+  Live: https://clymanstech.github.io/DisciplineOS/contact.html
+
+- **Checklist / Workout Log (PDF)**  
+  Downloadable workout log / checklist.  
+  Live: https://clymanstech.github.io/DisciplineOS/Workout%20Log%20-%20WorkoutLog.pdf
 
 ---
 
@@ -51,7 +60,6 @@ Everything else is handled with HTML/CSS.
 ---
 
 ## Tech Stack
-
 - HTML5
 - CSS3 (custom properties, responsive grid, scroll/entry animation)
 - Vanilla JavaScript (tiny utility script)
@@ -62,33 +70,45 @@ Everything else is handled with HTML/CSS.
 
 ## File Structure
 
-text
+```text
 disciplineos/
   index.html
   training.html
   contact.html
   styles.css
   app.js
+  Workout Log - WorkoutLog.pdf
   assets/
     resume.pdf   (optional — add your own)
 
-    Getting Started
 
-Option A: Run locally (quick):
+
+Getting Started
+Option A: Run locally (quick)
 
 Just open index.html in your browser.
 
-Option B: Recommended (local server):
+Option B: Recommended (local server)
+
 Some browser features behave more consistently on a local server.
 
-VS Code → install Live Server
+VS Code
+
+Install Live Server
 
 Right click index.html → Open with Live Server
 
-Notes / Caveats:
+Python
+
+# from the repo root
+python -m http.server 5500
+
+
+Then open: http://localhost:5500
+
+Notes / Caveats
 
 Scroll reveal animation uses modern CSS (animation-timeline: view()).
-
 If a browser doesn’t support it, the site gracefully falls back (content simply appears without the animation).
 
 The “Google Maps API” portion is an embed (no API key required).
@@ -100,12 +120,20 @@ Theme tokens are in styles.css under :root and html[data-theme="dark"]
 
 Replace placeholder contact info:
 
-Phone: tel:+15555550123
+Phone: tel:+15198098285
 
-Email: hello@disciplineos.example
+Email: clymanstech@gmail.com
 
-Drop your real PDF into assets/resume.pdf to activate the Resume link.
+Drop your real PDF into assets/resume.pdf, modify link name where pdf shows on site, to activate the Resume link.
+
+Contact
+
+Email: clymanstech@gmail.com
+
+Phone: +1 (519) 809-8285
 
 License
 
 Use freely for portfolio/demo purposes. If you publish this publicly, consider adding a license file (MIT is common for portfolio templates).
+
+::contentReference[oaicite:0]{index=0}
