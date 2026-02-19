@@ -117,7 +117,7 @@ body {
 .u-slide-in-right {
   --dur: 900ms;
   --ease: ease-out;
-  --delay: 0ms;
+  --delay: 100ms;
   --x: 24px;
 
   opacity: 0;
@@ -145,7 +145,7 @@ body {
 .u-fade-in {
   --dur: 900ms;
   --ease: ease-out;
-  --delay: 0ms;
+  --delay: 200ms;
 
   opacity: 0;
   transition: opacity var(--dur) var(--ease) var(--delay);
