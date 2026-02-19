@@ -35,7 +35,7 @@ form &&
 ///////////////////////Slide-in from right on scroll Js for Utility//////////////////
 // Animate on scroll: add .is-visible when elements enter viewport
 const revealOnScroll = document.querySelectorAll(
-  ".u-slide-in-right, .u-fade-in-up"
+  ".u-slide-in-right, .u-fade-in-up, .u-fade-in"
 );
 
 const io = new IntersectionObserver(

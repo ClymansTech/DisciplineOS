@@ -141,6 +141,29 @@ body {
   }
 }
 
+/* Fade in on scroll (add .is-visible via IntersectionObserver) */
+.u-fade-in {
+  --dur: 900ms;
+  --ease: ease-out;
+  --delay: 0ms;
+
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease) var(--delay);
+  will-change: opacity;
+}
+
+.u-fade-in.is-visible {
+  opacity: 1;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .u-fade-in {
+    opacity: 1;
+    transition: none;
+  }
+}
+
 /*=======================
 Utilities ends 
 ===============*/
