@@ -373,6 +373,38 @@ textarea:focus-visible {
   filter: saturate(0.9);
 }
 
+.hero-bgContact {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 35%),
+    url(imgs/Man&WomanStanding.png);
+  opacity: 0.18;
+  background-size: cover;
+
+  background-position: top;
+  filter: saturate(0.9);
+}
+
+@media screen and (max-width: 560px) {
+  .hero-bgContact {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1),
+        transparent 35%
+      ),
+      url(imgs/Man&WomanStretching.png);
+    opacity: 0.18;
+    background-size: cover;
+
+    background-position: top;
+    filter: saturate(0.9);
+  }
+}
+
 .hero-grid {
   position: relative;
   display: grid;
