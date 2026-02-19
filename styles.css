@@ -5,7 +5,6 @@
 }
 
 :root {
-  /* Fibonacci-ish spacing */
   --s13: 13px;
   --s21: 21px;
   --s34: 34px;
@@ -53,8 +52,6 @@ html[data-theme="dark"] {
   --muted: rgba(255, 255, 255, 0.7);
   --line: rgba(255, 255, 255, 0.16);
   --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
-
-  /* keep this as an actual color */
   --color1: rgba(255, 255, 255, 0.92);
 }
 
@@ -278,13 +275,46 @@ textarea:focus-visible {
   filter: saturate(0.9);
 }
 
-.hero-grid {
+/*.hero-grid {
   position: relative;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: var(--s55);
   align-items: start;
+}*/
+
+/*Adding fade-in for hero*/
+/* =========================
+   HERO
+========================= */
+
+.hero-grid {
+  display: grid;
+  gap: var(--s34);
+  grid-template-columns: 1.15fr 0.85fr;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: heroIn 700ms ease-out forwards;
 }
+
+/* Hero animation */
+@keyframes heroIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+/*Hero fade-in ends*/
+
 .eyebrow {
   color: var(--color1);
   letter-spacing: 0.16em;
@@ -304,12 +334,21 @@ textarea:focus-visible {
   max-width: 52ch;
   margin-bottom: var(--s34);
 }
-.cta-row {
+/*.cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s21);
   margin-bottom: var(--s34);
+}*/
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s21);
+  align-items: center; /* add this */
+  margin: 0; /* remove the global bottom margin */
 }
+
 .contact-strip {
   display: flex;
   flex-wrap: wrap;
@@ -585,12 +624,12 @@ textarea:focus-visible {
 }
 
 /* Video */
-.video-wrap {
+/*.video-wrap {
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
-}
+}*/
 .hero-media img {
   width: 100%;
   height: auto; /* normal scaling */
@@ -728,7 +767,7 @@ textarea:valid {
 .footer-cta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   gap: var(--s34);
   padding: var(--s34);
   border-radius: var(--radius);
@@ -995,9 +1034,9 @@ textarea:valid {
 }
 
 /*Centered cta on homepage above footer*/
-.cta-row > h2 {
+/*.cta-row > h2 {
   align-content: center;
-}
+}*/
 
 .footer-cta {
   width: min(500px, 100%);
