@@ -78,6 +78,40 @@ body {
 }
 /*fixing scroll issue for navbar ends*/
 
+/* =========================
+   ANIMATION UTILITIES
+========================= */
+
+.u-fade-in-up {
+  --fade-dur: 700ms;
+  --fade-ease: ease-out;
+  --fade-delay: 0ms;
+  --fade-y: 10px;
+
+  opacity: 0;
+  transform: translateY(var(--fade-y));
+  animation: fadeInUp var(--fade-dur) var(--fade-ease) var(--fade-delay)
+    forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .u-fade-in-up {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+/*=======================
+Utilities ends 
+===============*/
+
 body {
   font-family: var(--font);
   color: var(--text);
@@ -275,45 +309,13 @@ textarea:focus-visible {
   filter: saturate(0.9);
 }
 
-/*.hero-grid {
+.hero-grid {
   position: relative;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: var(--s55);
   align-items: start;
-}*/
-
-/*Adding fade-in for hero*/
-/* =========================
-   HERO
-========================= */
-
-.hero-grid {
-  display: grid;
-  gap: var(--s34);
-  grid-template-columns: 1.15fr 0.85fr;
-  opacity: 0;
-  transform: translateY(10px);
-  animation: heroIn 700ms ease-out forwards;
 }
-
-/* Hero animation */
-@keyframes heroIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Accessibility: reduce motion */
-@media (prefers-reduced-motion: reduce) {
-  .hero-grid {
-    opacity: 1;
-    transform: none;
-    animation: none;
-  }
-}
-/*Hero fade-in ends*/
 
 .eyebrow {
   color: var(--color1);
