@@ -53,6 +53,7 @@ html[data-theme="dark"] {
   --line: rgba(255, 255, 255, 0.16);
   --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   --color1: rgba(255, 255, 255, 0.92);
+  content: "☀️";
 }
 
 html[data-theme="dark"] .footer-cta {
@@ -70,6 +71,20 @@ html[data-theme="dark"] .site-header {
 html[data-theme="dark"] .card {
   border: 1px solid var(--muted);
 }
+
+/* Light mode: keep your existing 🌙 in the span (do nothing) */
+
+/* Dark mode: swap 🌙 -> 🌞 */
+html[data-theme="dark"] .theme-toggle span {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle::before {
+  content: "🌞";
+  display: inline-block;
+  line-height: 1;
+}
+
 /*Darked toggle background on nav dropdown on small screens*/
 @media (max-width: 500px) {
   html[data-theme="dark"] .nav-links.is-open {
