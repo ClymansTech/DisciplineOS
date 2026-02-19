@@ -59,6 +59,14 @@ html[data-theme="dark"] .footer-cta {
   background: var(--line);
 }
 
+html[data-theme="dark"] .site-header {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
 /*Darked toggle background on nav dropdown on small screens*/
 @media (max-width: 500px) {
   html[data-theme="dark"] .nav-links.is-open {
