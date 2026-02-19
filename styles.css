@@ -67,6 +67,9 @@ html[data-theme="dark"] .site-header {
   );
 }
 
+html[data-theme="dark"] .card {
+  border: 1px solid var(--muted);
+}
 /*Darked toggle background on nav dropdown on small screens*/
 @media (max-width: 500px) {
   html[data-theme="dark"] .nav-links.is-open {
